@@ -1,0 +1,120 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(to right, #fcefee, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Container utama */
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+/* Onboarding box */
+.onboarding {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Judul & teks */
+.onboarding h1 {
+  font-size: 24px;
+  color: #b77a7a;
+  margin-bottom: 10px;
+}
+
+.onboarding p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Tombol */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+
+/* Tombol utama */
+.btn:not(.secondary) {
+  background-color: #b77a7a;
+  color: #fff;
+  border: none;
+}
+
+.btn:not(.secondary):hover {
+  background-color: #a45f5f;
+}
+
+/* Tombol sekunder */
+.btn.secondary {
+  background-color: #f7e6e6;
+  color: #b77a7a;
+  border: 1px solid #d9a7a7;
+}
+
+.btn.secondary:hover {
+  background-color: #f3d5d5;
+}
+
+/* Animasi fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsif */
+@media (max-width: 480px) {
+  .onboarding {
+    padding: 30px 20px;
+  }
+
+  .onboarding h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

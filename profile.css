@@ -1,0 +1,96 @@
+/* style.css */
+
+/* Reset dan dasar */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #b66aa3; /* Warna khas hijab feminin */
+}
+
+/* Navigasi */
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #b66aa3;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #f3d4eb;
+}
+
+/* Main */
+main.dashboard {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+main.dashboard h2 {
+  margin-top: 0;
+  color: #8e4585;
+}
+
+main.dashboard p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Tombol */
+.btn {
+  background-color: #b66aa3;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #9f5890;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  main.dashboard {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 5px;
+  }
+}
