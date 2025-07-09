@@ -3,7 +3,7 @@ session_start();
 require 'koneksi.php';
 
 if (!isset($_SESSION['user_id'])) {
-  header("Location: signin.php");
+  header("Location: home.php");
   exit();
 }
 
@@ -265,7 +265,7 @@ while ($row = $result->fetch_assoc()) {
           </div>
         <?php endforeach; ?>
         <p class="total">Total: Rp <?= number_format($total, 0, ',', '.') ?></p>
-        <a href="dashboard_user.php" class="btn btn-primary">Lanjut Belanja</a>
+        <a href="index.php" class="btn btn-primary">Lanjut Belanja</a>
       <?php endif; ?>
     </div>
   </main>
@@ -299,5 +299,6 @@ while ($row = $result->fetch_assoc()) {
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
